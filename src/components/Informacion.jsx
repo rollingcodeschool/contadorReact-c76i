@@ -1,10 +1,10 @@
-const Informacion = () => {
+const Informacion = (props) => {
   //aqui va la logica del componente
 
   return (
     //aqui puede ir un poco de logica
     <>
-      <h2>Conceptos de react</h2>
+      <h2>Conceptos de react {props.comision}</h2>
       <section>
         {/* aqui va todo el maquetado del componente */}
         <p>
@@ -15,7 +15,7 @@ const Informacion = () => {
           usuario. React utiliza un paradigma de programación declarativa, lo
           que significa que los desarrolladores describen cómo debería ser la
           interfaz de usuario y React se encarga de manejar los cambios de
-          manera eficiente.
+          manera eficiente. <br/> comision: {props.anioActualProps}
         </p>
       </section>
     </>
